@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/bcmdhd/dhd.ko := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL -r  -T /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/scripts/module-common.lds --build-id  -o drivers/net/wireless/bcmdhd/dhd.ko drivers/net/wireless/bcmdhd/dhd.o drivers/net/wireless/bcmdhd/dhd.mod.o

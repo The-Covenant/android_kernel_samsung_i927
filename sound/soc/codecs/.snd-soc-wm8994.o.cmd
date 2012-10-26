@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-wm8994.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o sound/soc/codecs/snd-soc-wm8994.o sound/soc/codecs/wm8994_samsung.o sound/soc/codecs/wm8994_bose.o 

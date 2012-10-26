@@ -1,0 +1,1 @@
+cmd_net/bluetooth_mgmt/bnep/bnep.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o net/bluetooth_mgmt/bnep/bnep.o net/bluetooth_mgmt/bnep/core.o net/bluetooth_mgmt/bnep/sock.o net/bluetooth_mgmt/bnep/netdev.o 

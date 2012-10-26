@@ -1,0 +1,1 @@
+cmd_drivers/media/video/tegra/mediaserver/built-in.o :=  /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o drivers/media/video/tegra/mediaserver/built-in.o drivers/media/video/tegra/mediaserver/tegra_mediaserver.o 
