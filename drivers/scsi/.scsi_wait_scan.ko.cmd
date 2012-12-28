@@ -1,1 +1,0 @@
-cmd_drivers/scsi/scsi_wait_scan.ko := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL -r  -T /home/dman3285/CM10-I927-Kernel/scripts/module-common.lds --build-id  -o drivers/scsi/scsi_wait_scan.ko drivers/scsi/scsi_wait_scan.o drivers/scsi/scsi_wait_scan.mod.o

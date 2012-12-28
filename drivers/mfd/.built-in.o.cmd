@@ -1,1 +1,0 @@
-cmd_drivers/mfd/built-in.o :=  /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o drivers/mfd/built-in.o drivers/mfd/mfd-core.o drivers/mfd/max8907c.o drivers/mfd/max8907c-irq.o drivers/mfd/max8907c-adc.o 

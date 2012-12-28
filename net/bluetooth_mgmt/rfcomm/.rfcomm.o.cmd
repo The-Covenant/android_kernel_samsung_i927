@@ -1,1 +1,0 @@
-cmd_net/bluetooth_mgmt/rfcomm/rfcomm.o := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o net/bluetooth_mgmt/rfcomm/rfcomm.o net/bluetooth_mgmt/rfcomm/core.o net/bluetooth_mgmt/rfcomm/sock.o net/bluetooth_mgmt/rfcomm/tty.o 
