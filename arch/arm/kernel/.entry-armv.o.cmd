@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/entry-armv.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-gcc -Wp,-MD,arch/arm/kernel/.entry-armv.o.d  -nostdinc -isystem /opt/toolchains/android-toolchain-eabi/bin/../lib/gcc/arm-eabi/4.7.1/include -I/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__ -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2        -c -o arch/arm/kernel/entry-armv.o arch/arm/kernel/entry-armv.S
+cmd_arch/arm/kernel/entry-armv.o := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-gcc -Wp,-MD,arch/arm/kernel/.entry-armv.o.d  -nostdinc -isystem /home/dman3285/arm-eabi-linaro-4.7/bin/../lib/gcc/arm-eabi/4.7.2/include -I/home/dman3285/CM10-I927-Kernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/dman3285/CM10-I927-Kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -D__ASSEMBLY__  -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables  -D__LINUX_ARM_ARCH__=7 -march=armv7-a  -include asm/unified.h -msoft-float -gdwarf-2        -c -o arch/arm/kernel/entry-armv.o arch/arm/kernel/entry-armv.S
 
 source_arch/arm/kernel/entry-armv.o := arch/arm/kernel/entry-armv.S
 
@@ -24,13 +24,13 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/cc/stackprotector.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/include/linux/kconfig.h \
+  /home/dman3285/CM10-I927-Kernel/include/linux/kconfig.h \
     $(wildcard include/config/h.h) \
     $(wildcard include/config/.h) \
     $(wildcard include/config/foo.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/unified.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/memory.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/task/size.h) \
     $(wildcard include/config/highmem.h) \
@@ -52,20 +52,20 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/types.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/bitsperlong.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   arch/arm/mach-tegra/include/mach/memory.h \
     $(wildcard include/config/arch/tegra/2x/soc.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/sizes.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/glue-df.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/glue-df.h \
     $(wildcard include/config/cpu/abrt/lv4t.h) \
     $(wildcard include/config/cpu/abrt/ev4.h) \
     $(wildcard include/config/cpu/abrt/ev4t.h) \
@@ -73,15 +73,15 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/cpu/abrt/ev5t.h) \
     $(wildcard include/config/cpu/abrt/ev6.h) \
     $(wildcard include/config/cpu/abrt/ev7.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/glue.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/glue-pf.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/glue.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/glue-pf.h \
     $(wildcard include/config/cpu/pabrt/legacy.h) \
     $(wildcard include/config/cpu/pabrt/v6.h) \
     $(wildcard include/config/cpu/pabrt/v7.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/vfpmacros.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/vfpmacros.h \
     $(wildcard include/config/vfpv3.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/hwcap.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/vfp.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/hwcap.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/vfp.h \
   arch/arm/mach-tegra/include/mach/entry-macro.S \
     $(wildcard include/config/arm/gic.h) \
   arch/arm/mach-tegra/include/mach/iomap.h \
@@ -96,14 +96,14 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/tegra/debug/uarte.h) \
   arch/arm/mach-tegra/include/mach/io.h \
     $(wildcard include/config/tegra/pci.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/hardware/entry-macro-gic.S \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/hardware/gic.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/thread_notify.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/unwind.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/hardware/entry-macro-gic.S \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/hardware/gic.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/thread_notify.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/unwind.h \
     $(wildcard include/config/arm/unwind.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/unistd.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/unistd.h \
     $(wildcard include/config/oabi/compat.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/tls.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/tls.h \
     $(wildcard include/config/tls/reg/emul.h) \
     $(wildcard include/config/cpu/v6.h) \
   arch/arm/kernel/entry-header.S \
@@ -113,21 +113,21 @@ deps_arch/arm/kernel/entry-armv.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/linkage.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/linkage.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/assembler.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/linkage.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/assembler.h \
     $(wildcard include/config/cpu/feroceon.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/ptrace.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/domain.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/ptrace.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/asm-offsets.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/asm-offsets.h \
   include/generated/asm-offsets.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/errno.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/thread_info.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/fpstate.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/entry-macro-multi.S \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/fpstate.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/entry-macro-multi.S \
     $(wildcard include/config/local/timers.h) \
 
 arch/arm/kernel/entry-armv.o: $(deps_arch/arm/kernel/entry-armv.o)

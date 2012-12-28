@@ -1,1 +1,1 @@
-cmd_drivers/mmc/host/built-in.o :=  /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o drivers/mmc/host/built-in.o drivers/mmc/host/sdhci.o drivers/mmc/host/sdhci-pltfm.o drivers/mmc/host/sdhci-tegra.o 
+cmd_drivers/mmc/host/built-in.o :=  /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o drivers/mmc/host/built-in.o drivers/mmc/host/sdhci.o drivers/mmc/host/sdhci-pltfm.o drivers/mmc/host/sdhci-tegra.o 

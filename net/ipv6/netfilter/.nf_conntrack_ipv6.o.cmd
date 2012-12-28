@@ -1,1 +1,1 @@
-cmd_net/ipv6/netfilter/nf_conntrack_ipv6.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o net/ipv6/netfilter/nf_conntrack_ipv6.o net/ipv6/netfilter/nf_conntrack_l3proto_ipv6.o net/ipv6/netfilter/nf_conntrack_proto_icmpv6.o 
+cmd_net/ipv6/netfilter/nf_conntrack_ipv6.o := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o net/ipv6/netfilter/nf_conntrack_ipv6.o net/ipv6/netfilter/nf_conntrack_l3proto_ipv6.o net/ipv6/netfilter/nf_conntrack_proto_icmpv6.o 

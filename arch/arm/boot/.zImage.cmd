@@ -1,1 +1,1 @@
-cmd_arch/arm/boot/zImage := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-objcopy -O binary -R .comment -S  arch/arm/boot/compressed/vmlinux arch/arm/boot/zImage
+cmd_arch/arm/boot/zImage := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-objcopy -O binary -R .comment -S  arch/arm/boot/compressed/vmlinux arch/arm/boot/zImage

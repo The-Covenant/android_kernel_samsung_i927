@@ -1,1 +1,1 @@
-cmd_drivers/rtc/rtc-core.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o drivers/rtc/rtc-core.o drivers/rtc/class.o drivers/rtc/interface.o drivers/rtc/rtc-dev.o drivers/rtc/rtc-proc.o drivers/rtc/rtc-sysfs.o 
+cmd_drivers/rtc/rtc-core.o := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o drivers/rtc/rtc-core.o drivers/rtc/class.o drivers/rtc/interface.o drivers/rtc/rtc-dev.o drivers/rtc/rtc-proc.o drivers/rtc/rtc-sysfs.o 

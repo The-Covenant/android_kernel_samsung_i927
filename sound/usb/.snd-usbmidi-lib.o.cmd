@@ -1,1 +1,1 @@
-cmd_sound/usb/snd-usbmidi-lib.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o sound/usb/snd-usbmidi-lib.o sound/usb/midi.o 
+cmd_sound/usb/snd-usbmidi-lib.o := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o sound/usb/snd-usbmidi-lib.o sound/usb/midi.o 

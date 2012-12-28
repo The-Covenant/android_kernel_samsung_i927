@@ -1,1 +1,1 @@
-cmd_drivers/video/tegra/built-in.o :=  /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o drivers/video/tegra/built-in.o drivers/video/tegra/host/built-in.o drivers/video/tegra/dc/built-in.o drivers/video/tegra/fb.o drivers/video/tegra/nvmap/built-in.o 
+cmd_drivers/video/tegra/built-in.o :=  /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o drivers/video/tegra/built-in.o drivers/video/tegra/host/built-in.o drivers/video/tegra/dc/built-in.o drivers/video/tegra/fb.o drivers/video/tegra/nvmap/built-in.o 

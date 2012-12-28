@@ -1,1 +1,1 @@
-cmd_drivers/bluetooth/hci_uart.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o drivers/bluetooth/hci_uart.o drivers/bluetooth/hci_ldisc.o drivers/bluetooth/hci_h4.o drivers/bluetooth/hci_ll.o 
+cmd_drivers/bluetooth/hci_uart.o := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o drivers/bluetooth/hci_uart.o drivers/bluetooth/hci_ldisc.o drivers/bluetooth/hci_h4.o drivers/bluetooth/hci_ll.o 

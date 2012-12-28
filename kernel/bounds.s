@@ -10,19 +10,19 @@
 	.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
 	.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
 	.file	"bounds.c"
-@ GNU C (Linaro GCC 4.7-2012.06) version 4.7.1 20120531 (prerelease) (arm-eabi)
+@ GNU C (Linaro GCC 4.7-2012.07) version 4.7.2 20120701 (prerelease) (arm-eabi)
 @	compiled by GNU C version 4.5.2, GMP version 5.0.5, MPFR version 3.1.0-p8, MPC version 0.9
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc
-@ -I /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include
+@ -I /home/dman3285/CM10-I927-Kernel/arch/arm/include
 @ -I arch/arm/include/generated -I include -I arch/arm/mach-tegra/include
-@ -iprefix /opt/toolchains/android-toolchain-eabi/bin/../lib/gcc/arm-eabi/4.7.1/
+@ -iprefix /home/dman3285/arm-eabi-linaro-4.7/bin/../lib/gcc/arm-eabi/4.7.2/
 @ -D__USES_INITFINI__ -D __KERNEL__ -D __LINUX_ARM_ARCH__=7 -U arm
 @ -D CC_HAVE_ASM_GOTO -D KBUILD_STR(s)=#s
 @ -D KBUILD_BASENAME=KBUILD_STR(bounds)
 @ -D KBUILD_MODNAME=KBUILD_STR(bounds)
-@ -isystem /opt/toolchains/android-toolchain-eabi/bin/../lib/gcc/arm-eabi/4.7.1/include
-@ -include /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/include/linux/kconfig.h
+@ -isystem /home/dman3285/arm-eabi-linaro-4.7/bin/../lib/gcc/arm-eabi/4.7.2/include
+@ -include /home/dman3285/CM10-I927-Kernel/include/linux/kconfig.h
 @ -MD kernel/.bounds.s.d kernel/bounds.c -mlittle-endian -marm
 @ -mabi=aapcs-linux -mno-thumb-interwork -march=armv7-a -mfloat-abi=soft
 @ -mfpu=vfp -auxbase-strip kernel/bounds.s -g -O2 -Wall -Wundef
@@ -478,6 +478,8 @@ foo:
 	.ascii	"PG_mappedtodisk\000"
 .LASF12:
 	.ascii	"PG_locked\000"
+.LASF54:
+	.ascii	"GNU C 4.7.2 20120701 (prerelease)\000"
 .LASF25:
 	.ascii	"PG_writeback\000"
 .LASF16:
@@ -528,8 +530,6 @@ foo:
 	.ascii	"PG_pinned\000"
 .LASF19:
 	.ascii	"PG_slab\000"
-.LASF54:
-	.ascii	"GNU C 4.7.1 20120531 (prerelease)\000"
 .LASF20:
 	.ascii	"PG_owner_priv_1\000"
 .LASF18:
@@ -550,19 +550,18 @@ foo:
 	.ascii	"PG_savepinned\000"
 .LASF15:
 	.ascii	"PG_uptodate\000"
+.LASF56:
+	.ascii	"/home/dman3285/CM10-I927-Kernel\000"
 .LASF52:
 	.ascii	"PCG_ACCT_LRU\000"
 .LASF2:
 	.ascii	"short int\000"
-.LASF56:
-	.ascii	"/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-"
-	.ascii	"CM10\000"
+.LASF48:
+	.ascii	"PCG_USED\000"
 .LASF21:
 	.ascii	"PG_arch_1\000"
 .LASF47:
 	.ascii	"PCG_CACHE\000"
-.LASF48:
-	.ascii	"PCG_USED\000"
 .LASF10:
 	.ascii	"long int\000"
 .LASF44:
@@ -581,4 +580,4 @@ foo:
 	.ascii	"PG_mlocked\000"
 .LASF39:
 	.ascii	"PG_slob_free\000"
-	.ident	"GCC: (Linaro GCC 4.7-2012.06) 4.7.1 20120531 (prerelease)"
+	.ident	"GCC: (Linaro GCC 4.7-2012.07) 4.7.2 20120701 (prerelease)"

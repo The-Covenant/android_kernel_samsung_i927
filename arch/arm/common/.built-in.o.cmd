@@ -1,1 +1,1 @@
-cmd_arch/arm/common/built-in.o :=  /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o arch/arm/common/built-in.o arch/arm/common/gic.o arch/arm/common/fiq_glue.o arch/arm/common/fiq_glue_setup.o arch/arm/common/fiq_debugger.o 
+cmd_arch/arm/common/built-in.o :=  /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o arch/arm/common/built-in.o arch/arm/common/gic.o arch/arm/common/fiq_glue.o arch/arm/common/fiq_glue_setup.o arch/arm/common/fiq_debugger.o 

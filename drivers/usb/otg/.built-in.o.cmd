@@ -1,1 +1,1 @@
-cmd_drivers/usb/otg/built-in.o :=  /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o drivers/usb/otg/built-in.o drivers/usb/otg/otg.o drivers/usb/otg/otg_id.o drivers/usb/otg/tegra-otg.o drivers/usb/otg/ulpi.o drivers/usb/otg/ulpi_viewport.o 
+cmd_drivers/usb/otg/built-in.o :=  /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o drivers/usb/otg/built-in.o drivers/usb/otg/otg.o drivers/usb/otg/otg_id.o drivers/usb/otg/tegra-otg.o drivers/usb/otg/ulpi.o drivers/usb/otg/ulpi_viewport.o 

@@ -10,19 +10,19 @@
 	.eabi_attribute 34, 1	@ Tag_CPU_unaligned_access
 	.eabi_attribute 18, 4	@ Tag_ABI_PCS_wchar_t
 	.file	"asm-offsets.c"
-@ GNU C (Linaro GCC 4.7-2012.06) version 4.7.1 20120531 (prerelease) (arm-eabi)
+@ GNU C (Linaro GCC 4.7-2012.07) version 4.7.2 20120701 (prerelease) (arm-eabi)
 @	compiled by GNU C version 4.5.2, GMP version 5.0.5, MPFR version 3.1.0-p8, MPC version 0.9
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc
-@ -I /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include
+@ -I /home/dman3285/CM10-I927-Kernel/arch/arm/include
 @ -I arch/arm/include/generated -I include -I arch/arm/mach-tegra/include
-@ -iprefix /opt/toolchains/android-toolchain-eabi/bin/../lib/gcc/arm-eabi/4.7.1/
+@ -iprefix /home/dman3285/arm-eabi-linaro-4.7/bin/../lib/gcc/arm-eabi/4.7.2/
 @ -D__USES_INITFINI__ -D __KERNEL__ -D __LINUX_ARM_ARCH__=7 -U arm
 @ -D CC_HAVE_ASM_GOTO -D KBUILD_STR(s)=#s
 @ -D KBUILD_BASENAME=KBUILD_STR(asm_offsets)
 @ -D KBUILD_MODNAME=KBUILD_STR(asm_offsets)
-@ -isystem /opt/toolchains/android-toolchain-eabi/bin/../lib/gcc/arm-eabi/4.7.1/include
-@ -include /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/include/linux/kconfig.h
+@ -isystem /home/dman3285/arm-eabi-linaro-4.7/bin/../lib/gcc/arm-eabi/4.7.2/include
+@ -include /home/dman3285/CM10-I927-Kernel/include/linux/kconfig.h
 @ -MD arch/arm/kernel/.asm-offsets.s.d arch/arm/kernel/asm-offsets.c
 @ -mlittle-endian -marm -mabi=aapcs-linux -mno-thumb-interwork
 @ -march=armv7-a -mfloat-abi=soft -mfpu=vfp
@@ -415,15 +415,15 @@ main:
 	.text
 .Letext0:
 	.file 2 "include/asm-generic/int-ll64.h"
-	.file 3 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/posix_types.h"
+	.file 3 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/posix_types.h"
 	.file 4 "include/linux/types.h"
 	.file 5 "include/linux/capability.h"
-	.file 6 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/outercache.h"
+	.file 6 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/outercache.h"
 	.file 7 "include/linux/time.h"
 	.file 8 "include/linux/sched.h"
-	.file 9 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/spinlock_types.h"
+	.file 9 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/spinlock_types.h"
 	.file 10 "include/linux/spinlock_types.h"
-	.file 11 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/processor.h"
+	.file 11 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/processor.h"
 	.file 12 "include/asm-generic/atomic-long.h"
 	.file 13 "include/linux/rbtree.h"
 	.file 14 "include/linux/cpumask.h"
@@ -432,12 +432,12 @@ main:
 	.file 17 "include/linux/wait.h"
 	.file 18 "include/linux/completion.h"
 	.file 19 "include/linux/mm_types.h"
-	.file 20 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/page.h"
-	.file 21 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/mmu.h"
+	.file 20 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/page.h"
+	.file 21 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/mmu.h"
 	.file 22 "include/linux/mm.h"
 	.file 23 "include/asm-generic/cputime.h"
 	.file 24 "include/linux/rcupdate.h"
-	.file 25 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/signal.h"
+	.file 25 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/signal.h"
 	.file 26 "include/asm-generic/signal-defs.h"
 	.file 27 "include/asm-generic/siginfo.h"
 	.file 28 "include/linux/signal.h"
@@ -457,15 +457,15 @@ main:
 	.file 42 "include/linux/vmstat.h"
 	.file 43 "include/linux/ioport.h"
 	.file 44 "include/linux/dma-direction.h"
-	.file 45 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/cacheflush.h"
-	.file 46 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/hwcap.h"
+	.file 45 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/cacheflush.h"
+	.file 46 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/hwcap.h"
 	.file 47 "include/linux/printk.h"
 	.file 48 "include/linux/kernel.h"
 	.file 49 "include/linux/timex.h"
 	.file 50 "include/asm-generic/percpu.h"
 	.file 51 "include/linux/percpu_counter.h"
 	.file 52 "include/linux/debug_locks.h"
-	.file 53 "/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/cachetype.h"
+	.file 53 "/home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/cachetype.h"
 	.file 54 "include/linux/task_io_accounting.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
@@ -9323,6 +9323,8 @@ main:
 	.ascii	"stimescaled\000"
 .LASF283:
 	.ascii	"start_code\000"
+.LASF729:
+	.ascii	"GNU C 4.7.2 20120701 (prerelease)\000"
 .LASF703:
 	.ascii	"outer_cache\000"
 .LASF464:
@@ -9563,9 +9565,6 @@ main:
 	.ascii	"egid\000"
 .LASF111:
 	.ascii	"prev_utime\000"
-.LASF731:
-	.ascii	"/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-"
-	.ascii	"CM10\000"
 .LASF583:
 	.ascii	"maxrss\000"
 .LASF11:
@@ -9692,8 +9691,6 @@ main:
 	.ascii	"raw_spinlock_t\000"
 .LASF190:
 	.ascii	"rb_node\000"
-.LASF729:
-	.ascii	"GNU C 4.7.1 20120531 (prerelease)\000"
 .LASF20:
 	.ascii	"__kernel_gid32_t\000"
 .LASF45:
@@ -9720,6 +9717,8 @@ main:
 	.ascii	"cnivcsw\000"
 .LASF294:
 	.ascii	"rss_stat\000"
+.LASF731:
+	.ascii	"/home/dman3285/CM10-I927-Kernel\000"
 .LASF272:
 	.ascii	"mmlist\000"
 .LASF481:
@@ -10022,4 +10021,4 @@ main:
 	.ascii	"sa_mask\000"
 .LASF577:
 	.ascii	"cmin_flt\000"
-	.ident	"GCC: (Linaro GCC 4.7-2012.06) 4.7.1 20120531 (prerelease)"
+	.ident	"GCC: (Linaro GCC 4.7-2012.07) 4.7.2 20120701 (prerelease)"

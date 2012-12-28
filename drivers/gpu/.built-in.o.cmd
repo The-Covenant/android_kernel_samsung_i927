@@ -1,1 +1,1 @@
-cmd_drivers/gpu/built-in.o :=  /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o drivers/gpu/built-in.o drivers/gpu/drm/built-in.o drivers/gpu/vga/built-in.o drivers/gpu/stub/built-in.o drivers/gpu/ion/built-in.o 
+cmd_drivers/gpu/built-in.o :=  /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o drivers/gpu/built-in.o drivers/gpu/drm/built-in.o drivers/gpu/vga/built-in.o drivers/gpu/stub/built-in.o drivers/gpu/ion/built-in.o 

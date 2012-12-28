@@ -1,9 +1,9 @@
-cmd_net/bluetooth_mgmt/l2cap_sock.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-gcc -Wp,-MD,net/bluetooth_mgmt/.l2cap_sock.o.d  -nostdinc -isystem /opt/toolchains/android-toolchain-eabi/bin/../lib/gcc/arm-eabi/4.7.1/include -I/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(l2cap_sock)"  -D"KBUILD_MODNAME=KBUILD_STR(bluetooth)" -c -o net/bluetooth_mgmt/l2cap_sock.o net/bluetooth_mgmt/l2cap_sock.c
+cmd_net/bluetooth_mgmt/l2cap_sock.o := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-gcc -Wp,-MD,net/bluetooth_mgmt/.l2cap_sock.o.d  -nostdinc -isystem /home/dman3285/arm-eabi-linaro-4.7/bin/../lib/gcc/arm-eabi/4.7.2/include -I/home/dman3285/CM10-I927-Kernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/dman3285/CM10-I927-Kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -marm -fno-dwarf2-cfi-asm -mabi=aapcs-linux -mno-thumb-interwork -funwind-tables -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fomit-frame-pointer -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(l2cap_sock)"  -D"KBUILD_MODNAME=KBUILD_STR(bluetooth)" -c -o net/bluetooth_mgmt/l2cap_sock.o net/bluetooth_mgmt/l2cap_sock.c
 
 source_net/bluetooth_mgmt/l2cap_sock.o := net/bluetooth_mgmt/l2cap_sock.c
 
 deps_net/bluetooth_mgmt/l2cap_sock.o := \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/include/linux/kconfig.h \
+  /home/dman3285/CM10-I927-Kernel/include/linux/kconfig.h \
     $(wildcard include/config/h.h) \
     $(wildcard include/config/.h) \
     $(wildcard include/config/foo.h) \
@@ -12,12 +12,12 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/bt/l2cap.h) \
     $(wildcard include/config/bt/sco.h) \
   include/net/bluetooth/bluetooth_mgmt.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/types.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/bitsperlong.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
     $(wildcard include/config/64bit.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/byteorder.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/linux/types.h \
     $(wildcard include/config/uid16.h) \
@@ -36,9 +36,9 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc4.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/posix_types.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/posix_types.h \
   include/linux/swab.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/swab.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/linux/list.h \
     $(wildcard include/config/debug/list.h) \
@@ -46,7 +46,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/illegal/pointer/value.h) \
   include/linux/const.h \
   include/linux/poll.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/poll.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/poll.h \
   include/asm-generic/poll.h \
   include/linux/ktime.h \
     $(wildcard include/config/ktime/scalar.h) \
@@ -64,12 +64,12 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/numa.h) \
     $(wildcard include/config/compaction.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /opt/toolchains/android-toolchain-eabi/bin/../lib/gcc/arm-eabi/4.7.1/include/stdarg.h \
+  /home/dman3285/arm-eabi-linaro-4.7/bin/../lib/gcc/arm-eabi/4.7.2/include/stdarg.h \
   include/linux/linkage.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/linkage.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/bitops.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/system.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/bitops.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/system.h \
     $(wildcard include/config/function/graph/tracer.h) \
     $(wildcard include/config/cpu/32v6k.h) \
     $(wildcard include/config/cpu/xsc3.h) \
@@ -85,12 +85,12 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/irqflags.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/ptrace.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/irqflags.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/cpu/endian/be8.h) \
     $(wildcard include/config/arm/thumb.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/hwcap.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/outercache.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/hwcap.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/outercache.h \
     $(wildcard include/config/outer/cache/sync.h) \
     $(wildcard include/config/outer/cache.h) \
   include/asm-generic/cmpxchg-local.h \
@@ -113,14 +113,14 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/hotplug.h) \
   include/linux/dynamic_debug.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/bug.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/bug.h \
     $(wildcard include/config/bug.h) \
     $(wildcard include/config/debug/bugverbose.h) \
   include/asm-generic/bug.h \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/generic/bug/relative/pointers.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/div64.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/cache.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/div64.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/cache.h \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   include/linux/seqlock.h \
@@ -135,30 +135,30 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/preempt/notifiers.h) \
   include/linux/thread_info.h \
     $(wildcard include/config/compat.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/thread_info.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/fpstate.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/domain.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/domain.h \
     $(wildcard include/config/io/36.h) \
     $(wildcard include/config/cpu/use/domains.h) \
   include/linux/stringify.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/spinlock_types.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
     $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/spinlock.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/spinlock.h \
     $(wildcard include/config/thumb2/kernel.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/processor.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/arm/errata/754327.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/hw_breakpoint.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/hw_breakpoint.h \
   include/linux/rwlock.h \
   include/linux/spinlock_api_smp.h \
     $(wildcard include/config/inline/spin/lock.h) \
@@ -193,21 +193,21 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/atomic.h \
     $(wildcard include/config/arch/has/atomic/or.h) \
     $(wildcard include/config/generic/atomic64.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/atomic.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/atomic.h \
   include/asm-generic/atomic-long.h \
   include/linux/math64.h \
   include/linux/jiffies.h \
   include/linux/timex.h \
   include/linux/param.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/param.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/param.h \
     $(wildcard include/config/hz.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/timex.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/timex.h \
   arch/arm/mach-tegra/include/mach/timex.h \
   include/linux/wait.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/current.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/current.h \
   include/linux/string.h \
     $(wildcard include/config/binary/printf.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/string.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/string.h \
   include/linux/fs.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/fs/posix/acl.h) \
@@ -224,7 +224,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/migration.h) \
   include/linux/limits.h \
   include/linux/ioctl.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/ioctl.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/ioctl.h \
   include/asm-generic/ioctl.h \
   include/linux/blk_types.h \
     $(wildcard include/config/blk/dev/integrity.h) \
@@ -260,7 +260,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/bit_spinlock.h \
   include/linux/path.h \
   include/linux/stat.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/stat.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/stat.h \
   include/linux/radix-tree.h \
   include/linux/prio_tree.h \
   include/linux/pid.h \
@@ -275,7 +275,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/quota.h \
     $(wildcard include/config/quota/netlink/interface.h) \
   include/linux/errno.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/errno.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/errno.h \
   include/asm-generic/errno.h \
   include/asm-generic/errno-base.h \
   include/linux/rwsem.h \
@@ -284,13 +284,13 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/percpu_counter.h \
   include/linux/smp.h \
     $(wildcard include/config/use/generic/smp/helpers.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/smp.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/smp.h \
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
     $(wildcard include/config/have/setup/per/cpu/area.h) \
   include/linux/pfn.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/percpu.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/percpu.h \
   include/asm-generic/percpu.h \
   include/linux/percpu-defs.h \
     $(wildcard include/config/debug/force/weak/per/cpu.h) \
@@ -303,12 +303,12 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/sunrpc/msg_prot.h \
   include/linux/inet.h \
   include/linux/fcntl.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/fcntl.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/fcntl.h \
   include/asm-generic/fcntl.h \
   include/linux/err.h \
   include/linux/sysctl.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/uaccess.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/memory.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/uaccess.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/task/size.h) \
     $(wildcard include/config/highmem.h) \
@@ -319,14 +319,14 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/arm/patch/phys/virt/16bit.h) \
   arch/arm/mach-tegra/include/mach/memory.h \
     $(wildcard include/config/arch/tegra/2x/soc.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/sizes.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/unified.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/unified.h \
     $(wildcard include/config/arm/asm/unified.h) \
   include/net/sock.h \
     $(wildcard include/config/net/ns.h) \
@@ -341,9 +341,9 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/irq/time/accounting.h) \
   include/linux/ftrace_irq.h \
     $(wildcard include/config/ftrace/nmi/enter.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/hardirq.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/hardirq.h \
     $(wildcard include/config/local/timers.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/irq.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/irq.h \
   arch/arm/mach-tegra/include/mach/irqs.h \
     $(wildcard include/config/arch/tegra/3x/soc.h) \
   include/linux/irq_cpustat.h \
@@ -388,7 +388,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/hugetlb/page.h) \
     $(wildcard include/config/hugetlb/page/size/variable.h) \
   include/generated/bounds.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/page.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
@@ -396,7 +396,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/cpu/copy/fa.h) \
     $(wildcard include/config/cpu/xscale.h) \
     $(wildcard include/config/cpu/copy/v6.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/glue.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/glue.h \
   include/asm-generic/getorder.h \
   include/linux/memory_hotplug.h \
     $(wildcard include/config/memory/hotremove.h) \
@@ -408,7 +408,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/sched/mc.h) \
     $(wildcard include/config/sched/book.h) \
     $(wildcard include/config/use/percpu/numa/node/id.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/topology.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/topology.h \
   include/asm-generic/topology.h \
   include/linux/mmdebug.h \
     $(wildcard include/config/debug/vm.h) \
@@ -418,8 +418,8 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/freezer.h) \
   include/linux/elf.h \
   include/linux/elf-em.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/elf.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/user.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/elf.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/user.h \
   include/linux/kobject.h \
   include/linux/sysfs.h \
   include/linux/kobject_ns.h \
@@ -434,7 +434,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/export.h \
     $(wildcard include/config/symbol/prefix.h) \
     $(wildcard include/config/modversions.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/module.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/module.h \
     $(wildcard include/config/arm/unwind.h) \
   include/trace/events/module.h \
   include/trace/define_trace.h \
@@ -461,8 +461,8 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/netpoll/trap.h) \
   include/linux/if.h \
   include/linux/socket.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/socket.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/sockios.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/socket.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/sockios.h \
   include/linux/sockios.h \
   include/linux/uio.h \
   include/linux/hdlc/ioctl.h \
@@ -488,12 +488,12 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/mmu/notifier.h) \
     $(wildcard include/config/transparent/hugepage.h) \
   include/linux/auxvec.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/auxvec.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/auxvec.h \
   include/linux/rbtree.h \
   include/linux/page-debug-flags.h \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/page/debug/something/else.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/mmu.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/mmu.h \
     $(wildcard include/config/cpu/has/asid.h) \
   include/linux/net.h \
   include/linux/random.h \
@@ -510,7 +510,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/trace/events/gfpflags.h \
   include/linux/kmalloc_sizes.h \
   include/net/checksum.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/checksum.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/checksum.h \
   include/linux/in6.h \
   include/linux/dmaengine.h \
     $(wildcard include/config/async/tx/enable/channel/switch.h) \
@@ -526,12 +526,12 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/pm.h) \
     $(wildcard include/config/pm/sleep.h) \
     $(wildcard include/config/pm/runtime.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/device.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/device.h \
     $(wildcard include/config/dmabounce.h) \
   include/linux/pm_wakeup.h \
   include/linux/scatterlist.h \
     $(wildcard include/config/debug/sg.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/scatterlist.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/scatterlist.h \
     $(wildcard include/config/arm/has/sg/chain.h) \
   include/asm-generic/scatterlist.h \
     $(wildcard include/config/need/sg/dma/length.h) \
@@ -545,11 +545,11 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/debug_locks.h \
     $(wildcard include/config/debug/locking/api/selftests.h) \
   include/linux/range.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/pgtable.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/pgtable.h \
     $(wildcard include/config/highpte.h) \
   include/asm-generic/4level-fixup.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/proc-fns.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/glue-proc.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/proc-fns.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/glue-proc.h \
     $(wildcard include/config/cpu/arm610.h) \
     $(wildcard include/config/cpu/arm7tdmi.h) \
     $(wildcard include/config/cpu/arm710.h) \
@@ -571,7 +571,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/cpu/v6k.h) \
     $(wildcard include/config/cpu/v7.h) \
   arch/arm/mach-tegra/include/mach/vmalloc.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/pgtable-hwdef.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/pgtable-hwdef.h \
   include/asm-generic/pgtable.h \
   include/linux/page-flags.h \
     $(wildcard include/config/pageflags/extended.h) \
@@ -583,7 +583,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/vmstat.h \
     $(wildcard include/config/vm/event/counters.h) \
   include/linux/vm_event_item.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/io.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/io.h \
   arch/arm/mach-tegra/include/mach/io.h \
     $(wildcard include/config/tegra/pci.h) \
   include/linux/hrtimer.h \
@@ -599,7 +599,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/miscdevice.h \
   include/linux/major.h \
   include/linux/delay.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/delay.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/delay.h \
     $(wildcard include/config/arch/provides/udelay.h) \
   arch/arm/mach-tegra/include/mach/delay.h \
   include/linux/ethtool.h \
@@ -689,17 +689,17 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
     $(wildcard include/config/have/unstable/sched/clock.h) \
     $(wildcard include/config/debug/stack/usage.h) \
     $(wildcard include/config/cgroup/sched.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/cputime.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/cputime.h \
   include/asm-generic/cputime.h \
   include/linux/sem.h \
   include/linux/ipc.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/ipcbuf.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/sembuf.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/ipcbuf.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/sembuf.h \
   include/linux/signal.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/signal.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/signal.h \
   include/asm-generic/signal-defs.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/sigcontext.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/siginfo.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/sigcontext.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/siginfo.h \
   include/asm-generic/siginfo.h \
   include/linux/proportions.h \
   include/linux/seccomp.h \
@@ -707,7 +707,7 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \
   include/linux/resource.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/resource.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/resource.h \
   include/asm-generic/resource.h \
   include/linux/task_io_accounting.h \
     $(wildcard include/config/task/io/accounting.h) \
@@ -722,10 +722,10 @@ deps_net/bluetooth_mgmt/l2cap_sock.o := \
   include/linux/aio_abi.h \
   include/linux/binfmts.h \
   include/linux/shm.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/shmparam.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/shmbuf.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/shmparam.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/shmbuf.h \
   include/linux/msg.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/msgbuf.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/msgbuf.h \
   include/linux/uaccess.h \
   include/linux/filter.h \
     $(wildcard include/config/bpf/jit.h) \

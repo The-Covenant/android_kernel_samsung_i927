@@ -1,1 +1,1 @@
-cmd_sound/soc/snd-soc-core.o := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o sound/soc/snd-soc-core.o sound/soc/soc-core.o sound/soc/soc-dapm.o sound/soc/soc-jack.o sound/soc/soc-cache.o sound/soc/soc-utils.o sound/soc/soc-pcm.o sound/soc/soc-io.o 
+cmd_sound/soc/snd-soc-core.o := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o sound/soc/snd-soc-core.o sound/soc/soc-core.o sound/soc/soc-dapm.o sound/soc/soc-jack.o sound/soc/soc-cache.o sound/soc/soc-utils.o sound/soc/soc-pcm.o sound/soc/soc-io.o 

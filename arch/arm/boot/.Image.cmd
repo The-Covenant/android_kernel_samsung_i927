@@ -1,1 +1,1 @@
-cmd_arch/arm/boot/Image := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-objcopy -O binary -R .comment -S  vmlinux arch/arm/boot/Image
+cmd_arch/arm/boot/Image := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-objcopy -O binary -R .comment -S  vmlinux arch/arm/boot/Image

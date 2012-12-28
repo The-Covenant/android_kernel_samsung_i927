@@ -1,1 +1,1 @@
-cmd_net/key/built-in.o :=  /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-ld -EL    -r -o net/key/built-in.o net/key/af_key.o 
+cmd_net/key/built-in.o :=  /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-ld -EL    -r -o net/key/built-in.o net/key/af_key.o 

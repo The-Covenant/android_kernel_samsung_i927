@@ -1,4 +1,4 @@
-cmd_arch/arm/kernel/vmlinux.lds := /opt/toolchains/android-toolchain-eabi/bin/arm-eabi-gcc -E -Wp,-MD,arch/arm/kernel/.vmlinux.lds.d  -nostdinc -isystem /opt/toolchains/android-toolchain-eabi/bin/../lib/gcc/arm-eabi/4.7.1/include -I/home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include   -DTEXT_OFFSET=0x00008000 -P -C -Uarm -D__ASSEMBLY__ -DLINKER_SCRIPT -o arch/arm/kernel/vmlinux.lds arch/arm/kernel/vmlinux.lds.S
+cmd_arch/arm/kernel/vmlinux.lds := /home/dman3285/arm-eabi-linaro-4.7/bin/arm-eabi-gcc -E -Wp,-MD,arch/arm/kernel/.vmlinux.lds.d  -nostdinc -isystem /home/dman3285/arm-eabi-linaro-4.7/bin/../lib/gcc/arm-eabi/4.7.2/include -I/home/dman3285/CM10-I927-Kernel/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include /home/dman3285/CM10-I927-Kernel/include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-tegra/include   -DTEXT_OFFSET=0x00008000 -P -C -Uarm -D__ASSEMBLY__ -DLINKER_SCRIPT -o arch/arm/kernel/vmlinux.lds arch/arm/kernel/vmlinux.lds.S
 
 source_arch/arm/kernel/vmlinux.lds := arch/arm/kernel/vmlinux.lds.S
 
@@ -12,7 +12,7 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/xip/phys/addr.h) \
     $(wildcard include/config/arm/unwind.h) \
     $(wildcard include/config/have/tcm.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/include/linux/kconfig.h \
+  /home/dman3285/CM10-I927-Kernel/include/linux/kconfig.h \
     $(wildcard include/config/h.h) \
     $(wildcard include/config/.h) \
     $(wildcard include/config/foo.h) \
@@ -30,17 +30,17 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/generic/bug.h) \
     $(wildcard include/config/pm/trace.h) \
     $(wildcard include/config/blk/dev/initrd.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/thread_info.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/thread_info.h \
     $(wildcard include/config/arm/thumbee.h) \
   include/linux/compiler.h \
     $(wildcard include/config/sparse/rcu/pointer.h) \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/enable/warn/deprecated.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/fpstate.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/iwmmxt.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/memory.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/memory.h \
     $(wildcard include/config/page/offset.h) \
     $(wildcard include/config/task/size.h) \
     $(wildcard include/config/thumb2/kernel.h) \
@@ -56,20 +56,20 @@ deps_arch/arm/kernel/vmlinux.lds := \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/types.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/types.h \
   include/asm-generic/int-ll64.h \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/bitsperlong.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   arch/arm/mach-tegra/include/mach/memory.h \
     $(wildcard include/config/arch/tegra/2x/soc.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/sizes.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/sizes.h \
   include/asm-generic/sizes.h \
   include/asm-generic/memory_model.h \
     $(wildcard include/config/flatmem.h) \
     $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/sparsemem/vmemmap.h) \
     $(wildcard include/config/sparsemem.h) \
-  /home/cody/build_kernel/SGH-I927_Kernel/LiteKernel-CM10/arch/arm/include/asm/page.h \
+  /home/dman3285/CM10-I927-Kernel/arch/arm/include/asm/page.h \
     $(wildcard include/config/cpu/copy/v3.h) \
     $(wildcard include/config/cpu/copy/v4wt.h) \
     $(wildcard include/config/cpu/copy/v4wb.h) \
